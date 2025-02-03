@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Form Element</title>
+</head>
+<body>
+	<div class="container">
+		<h3>Form Element</h3>
+		<form action="" method="" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-md-6 form-group mb-3">
+					<label for="firstname">First Name</label>
+					<input type="text" name="firstname" id="firstname" class="form-control form-control-lg">
+				</div>
+				<div class="col-md-6 form-group mb-3">
+					<label for="lastname">Last Name</label>
+					<input type="text" name="lastname" id="lastname" class="form-control form-control-sm">
+				</div>
+				<div class="col-md-6 form-group mb-3">
+					<label for="height">Height</label>
+					<input type="number" name="height" id="height" class="form-control">
+				</div>
+				<div class="col-md-6 form-group mb-3">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="Enter Your Email" class="form-control">
+				</div>
+				<div class="form-group col-md-6 mb-3">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" class="form-control">
+				</div>
+				<div class="form-group col-md-6 mb-3">
+					<label for="country">Country</label>
+					<select name="country" id="country" class="form-select">
+						<option disabled selected>Choose Country</option>
+						<option value="indo">Indonesia</option>
+						<option value="la">Lao</option>
+						<option value="ml">Malaysia</option>
+						<option value="th">Thiland</option>
+						<option value="ca">Cambodia</option>
+						<option value="ph">Phillipines</option>
+					</select>
+				</div>
+				<div class="form-group col-md-6 mb-3">
+					<label for="role">Role</label>
+					<select name="role[]" id="role" class="form-select" multiple>
+						<option value="mg">Manager</option>
+						<option value="wd">Web Developer</option>
+						<option value="wde">Web Designer</option>
+						<option value="ed">Editor</option>
+						<option value="ac">Accountant</option>
+						<option value="ad">Admin</option>
+					</select>
+				</div>
+				<div class="col-md-6 form-group mb-3">
+					<label>Gender</label>
+					<div class="form-check">
+					<input type="radio" name="gender" id="genderm" class="form-check-input" value="1">
+					<label for="genderm">Male</label>
+					</div>
+					<div class="form-check">
+					<input type="radio" name="gender" id="genderf" class="form-check-input" value="2">
+					<label for="genderf">Female</label>
+					</div>
+				</div>
+				<div class="form-group col-md-6 mb-3">
+					<label>Favourite Music</label>
+					<div class="form-check">
+						<input type="checkbox" name="music" id="favpop" value="1" class="form-check-input">
+						<label for="favpop">Pop Music</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" name="music" id="favrock" value="2" class="form-check-input">
+						<label for="favrock">Rock Music</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" name="music" id="favjaz" value="3" class="form-check-input">
+						<label for="favjaz">Jazz Music</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" name="music" id="favhp" value="4" class="form-check-input">
+						<label for="favhp">Hip-hop Music</label>
+					</div>
+				</div>
+				<div class="form-group col-md-6 mb-3">
+					<label for="dob">Date of Birth</label>
+					<input type="date" name="dob" id="dob" class="form-control rounded-1">
+				</div>
+				<div class="form-group col-md-6 mb-3">
+					<label for="nrc">Nrc</label>
+					<input type="file" name="nrc" id="nrc" class="form-control rounded">
+				</div>
+				<div class="form-group col-md-6 mb-3">
+					<label for="score">Range</label> 
+					<input type="range" id="score" name="score" class="form-range" min="0" max="100" value="0" step="10">
+				</div>
+				<div class="form-group col-md-6 mb-3">
+					<label for="bio">Bio</label>
+					<textarea name="bio" id="bio" class="form-control" rows="5"></textarea>
+				</div>
+				<div class="form-group col-md-12 mb-3">
+					<div class="form-check form-switch">
+					<input type="checkbox" name="agree" id="agree" class="form-check-input" value="1"> <label for="agree">I agree terms and conditions</label>
+					</div>
+				</div>
+				<div class="form-group col-md-12 mb-3">
+					<div class="d-flex justify-content-end">
+						<button type="reset" class="btn btn-danger btn-sm rounded-pill me-3">Cancel</button>
+						<button type="submit" class="btn btn-success btn-sm rounded-pill">Register</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+<!-- 
+
+0 to 5
+
+margin = m-5;
+margin-top = mt-5;
+margin-bottom = mb-5;
+margin-left = ms-5;
+margin-right = me-5;
+				mx-5;
+				my-5;
+				mx-auto;
+				my-auto;
+
+
+padding = p-5;
+padding-top = pt-5;
+padding-bottom = pb-5;
+padding-left = ps-5;
+padding-right = pe-5;
+				px-5;
+				py=5;
+
+ -->
