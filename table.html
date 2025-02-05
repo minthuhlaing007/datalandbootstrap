@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- datatable css1 js1 -->
+	<link rel="stylesheet" href="jqueryfile/datatables.min.css">
 	<title>Table</title>
 </head>
 <body>
@@ -11,7 +13,7 @@
 		<h3>Table</h3>
 		<div class="row">
 			<div class="col-md-12">
-				<table class="table border">
+				<table class="table border" id="myTable">
 					<thead>
 						<tr>
 							<th>ID</th>
@@ -270,5 +272,15 @@
 
 
 	<script src="js/bootstrap.bundle.js"></script>
+	<!-- jquery js1 -->
+	<script src="jqueryfile/jquery.min.js" type="text/javascript"></script>
+	<!-- datatable css1 js1 -->
+	<script src="jqueryfile/datatables.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			 $('.table').DataTable();
+		});
+	</script>
 </body>
 </html>
+
